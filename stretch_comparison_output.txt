@@ -1,0 +1,55 @@
+=== Entity Count Comparison ===
+               Base  Ruler_Before  Ruler_After
+entity_label                                  
+AGREEMENT         0             6            0
+CARDINAL        138           138          138
+CLIMATE_EVENT     0             5            3
+DATE            256           257          256
+EVENT             8             2            8
+FAC               9             8            9
+GPE             165           165          165
+LAW               5             5            5
+LOC              93            93           93
+MONEY            63            63           63
+NORP             21            21           21
+ORDINAL           9             9            9
+ORG             184           181          184
+PERCENT         103           103          103
+PERSON           36            36           36
+POLICY            0             4            3
+PRODUCT           6             6            6
+QUANTITY         92            91           92
+REPORT            0             2            0
+THRESHOLD         0             1            0
+TIME              8             8            8
+WORK_OF_ART       6             6            6
+
+=== Evaluation on Standard Labels ===
+               Base  Ruler_Before  Ruler_After
+precision  0.656716      0.750000     0.656716
+recall     0.647059      0.661765     0.647059
+f1         0.651852      0.703125     0.651852
+
+=== Custom Label Examples ===
+
+Label: CLIMATE_EVENT
+  Match: 'COP28' (Text ID: 2)
+  Match: 'Climate Ambition Summit' (Text ID: 7)
+  Match: 'COP28' (Text ID: 10)
+
+Label: POLICY
+  Match: 'nationally determined contributions' (Text ID: 5)
+  Match: 'NDCs' (Text ID: 5)
+  Match: 'Carbon Border Adjustment Mechanism' (Text ID: 6)
+
+Label: REPORT
+  Match: 'Sixth Assessment Report' (Text ID: 1)
+  Match: 'State of Food and Agriculture' (Text ID: 8)
+
+Label: THRESHOLD
+  Match: '1.5 degrees Celsius' (Text ID: 1)
+
+Label: AGREEMENT
+  Match: 'Paris Agreement' (Text ID: 5)
+  Match: 'Paris Agreement' (Text ID: 7)
+  Match: 'Paris Agreement' (Text ID: 10)
